@@ -57,6 +57,7 @@ class SleepTrackerFragment : Fragment() {
                 .get(SleepTrackerViewModel::class.java)
 
         binding.lifecycleOwner = this
+        binding.sleepTrackerViewModel = sleepTrackerViewModel
 
         return binding.root
     }
