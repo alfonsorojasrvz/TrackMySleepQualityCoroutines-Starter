@@ -45,7 +45,7 @@ class SleepTrackerFragment : Fragment() {
         val binding: FragmentSleepTrackerBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_sleep_tracker, container, false)
 
-        val application = requireNotNull(this.activity)
+        val application = requireNotNull(this.activity).application
 
         val dataSource = SleepDatabase.getInstance(application).sleepDatabaseDao
 
